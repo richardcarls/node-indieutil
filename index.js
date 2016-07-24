@@ -17,6 +17,7 @@ module.exports.toJf2 = function(mf2) {
   // Collapse root collection on single item
   if (jf2.children.length === 1) {
     _.assign(jf2, jf2.children[0]);
+    delete jf2.children;
   }
 
   return jf2;
