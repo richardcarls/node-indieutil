@@ -4,15 +4,15 @@ var chai = require('chai');
 chai.use(require('chai-things'));
 var expect = chai.expect;
 
-var indieutil = require('..');
+var toJf2 = require('../lib/to-jf2');
 
-describe('indieutil.toJf2', function() {
+describe('@rcarls/indieutil.toJf2', function() {
 
   // Microformats2 data from the JF2 spec (Example 12)
   describe('The parsed JF2 of "Example 12" from the spec', function() {
     var source = require('./mocks/example12.json');
     
-    var jf2 = indieutil.toJf2(source)
+    var jf2 = toJf2(source)
 
     it('should be type "entry"', function() {
       expect(jf2.type).to.equal('entry');
@@ -44,4 +44,4 @@ describe('indieutil.toJf2', function() {
 
   }); // The parsed JF2 of "Example 12" from the spec
   
-}); // indieutil.toJf2
+}); // @rcarls/indieutil.toJf2
