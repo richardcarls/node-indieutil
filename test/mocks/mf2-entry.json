@@ -1,0 +1,12 @@
+{
+  "type": [ "h-entry" ],
+  "properties": {
+    "name": [ "Test Entry" ],
+    "content": {
+      "value": "lorem ipsum"
+    },
+    "url": [ "https://example.com/notes/1" ],
+    "published": "2015-10-21T12:00:00-0700",
+    "category": [ "Cat1", "Cat2" ]
+  }
+}
