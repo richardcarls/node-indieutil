@@ -26,14 +26,9 @@ describe('indieutil.toJf2', function() {
     });
 
     it('should correctly parse content', function() {
-      expect(jf2.content).to.have.lengthOf(2);
-      expect(jf2.content).to.include.something
-        .that.deep.equals({
-          'content-type': 'text/plain',
-          value: 'Donec dapibus enim lacus, a vehicula magna bibendum non. Phasellus id lacinia felis, vitae pellentesque enim. Sed at quam dui. Suspendisse accumsan, est id pulvinar consequat, urna ex tincidunt enim, nec sodales lectus nulla et augue. Cras venenatis vehicula molestie. Donec sagittis elit orci, sit amet egestas ex pharetra in.',
-        });
-      expect(jf2.content).to.include.something
-        .that.deep.equals({
+      var util = require('util');
+      console.log(util.inspect(jf2, {depth:5}));
+      expect(jf2.content).to.deep.equal({
           'content-type': 'text/html',
           value: '<p>Donec dapibus enim lacus, <i>a vehicula magna bibendum non</i>. Phasellus id lacinia felis, vitae pellentesque enim. Sed at quam dui. Suspendisse accumsan, est id pulvinar consequat, urna ex tincidunt enim, nec sodales lectus nulla et augue. Cras venenatis vehicula molestie. Donec sagittis elit orci, sit amet egestas ex pharetra in.</p>',
         });
