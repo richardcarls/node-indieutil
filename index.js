@@ -1,3 +1,6 @@
+/**
+ * @module indieutil
+ */
 module.exports = {
   toJf2: require('./lib/to-jf2'),
   entryToCite: require('./lib/entry-to-cite'),
@@ -6,4 +9,5 @@ module.exports = {
   determineRepresentativeCard: require('./lib/determine-representative-card'),
   determineMentions: require('./lib/determine-mentions'),
   determinePostTypes: require('./lib/determine-post-types'),
+  htmlToPlain: require('./lib/html-to-plain'),
 };
