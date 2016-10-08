@@ -6,6 +6,7 @@ module.exports = {
   entryToCite: require('./lib/entry-to-cite'),
   fetch: require('./lib/fetch'),
   jf2FetchRefs: require('./lib/jf2-fetch-refs'),
+  jf2EmbedRefs: require('./lib/jf2-embed-refs'),
   determineAuthor: require('./lib/determine-author'),
   determineRepresentativeCard: require('./lib/determine-representative-card'),
   determineMentions: require('./lib/determine-mentions'),
