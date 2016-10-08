@@ -18,7 +18,7 @@ describe('@rcarls/indieutil.determinePostTypes', function() {
       entry = {
         type: ['h-entry'],
         properties: {
-          content: { value: 'note', },
+          content: [{ value: 'note', }],
         },
       };
     });
@@ -99,9 +99,9 @@ describe('@rcarls/indieutil.determinePostTypes', function() {
         type: ['h-entry'],
         properties: {
           name: ['This is a note'],
-          content: {
+          content: [{
             html: '<span class="p-name">This is a note</span>\n    , <b>OK</b>?',
-          },
+          }],
         },
       };
     });
@@ -123,9 +123,9 @@ describe('@rcarls/indieutil.determinePostTypes', function() {
         properties: {
           name: ['\n    I read <a href="' + mockNoteUrl + '">this</a>'
             + '\n    This is a <b>note</b>'],
-          content: {
+          content: [{
             html: 'This is a <b>note</b>',
-          },
+          }],
         },
       };
     });
