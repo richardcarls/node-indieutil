@@ -10,6 +10,7 @@ module.exports = {
   determineAuthor: require('./lib/determine-author'),
   determineRepresentativeCard: require('./lib/determine-representative-card'),
   determineMentions: require('./lib/determine-mentions'),
+  determineMentionTargets: require('./lib/determine-mention-targets'),
   determinePostTypes: require('./lib/determine-post-types'),
   htmlToPlain: require('./lib/html-to-plain'),
 };

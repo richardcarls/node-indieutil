@@ -15,6 +15,7 @@ describe('@rcarls/indieutil', function() {
     expect(indieutil.determineAuthor).to.be.a('function');
     expect(indieutil.determineRepresentativeCard).to.be.a('function');
     expect(indieutil.determineMentions).to.be.a('function');
+    expect(indieutil.determineMentionTargets).to.be.a('function');
     expect(indieutil.determinePostTypes).to.be.a('function');
     expect(indieutil.htmlToPlain).to.be.a('function');
   });
