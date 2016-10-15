@@ -13,4 +13,5 @@ module.exports = {
   determineMentionTargets: require('./lib/determine-mention-targets'),
   determinePostTypes: require('./lib/determine-post-types'),
   htmlToPlain: require('./lib/html-to-plain'),
+  resolveRelativeUrls: require('./lib/resolve-relative-urls'),
 };
