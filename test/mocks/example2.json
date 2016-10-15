@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "type": [
+        "h-entry"
+      ],
+      "properties": {
+        "published": [
+          "2015-10-20T15:49:00-0700"
+        ],
+        "url": [
+          "http://example.com/like/r23eugi02c"
+        ],
+        "author": [
+          {
+            "type": [
+              "h-card"
+            ],
+            "properties": {
+              "name": [
+                "Alice"
+              ],
+              "url": [
+                "http://alice.example.com"
+              ],
+              "photo": [
+                "http://alice.example.com/photo.jpg"
+              ]
+            }
+          }
+        ],
+        "like-of": [
+          "http://bob.example.com/post/100"
+        ],
+        "category": [
+          "Likes",
+          "Posts"
+        ]
+      }
+    }
+  ],
+  "rels": {},
+  "rel-urls": {}
+}
