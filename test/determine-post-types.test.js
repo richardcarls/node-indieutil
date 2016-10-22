@@ -137,4 +137,27 @@ describe('@rcarls/indieutil.determinePostTypes', function() {
 
   }); // an entry with html content and intrinsic name
 
+  describe('and entry with empty like-of array', function() {
+
+    var entry;
+
+    beforeEach('html entry', function() {
+      entry = {
+        type: ['h-entry'],
+        properties: {
+          'like-of': [],
+          content: [{
+            value: 'This is a note.',
+          }],
+        },
+      };
+    });
+
+    it('is not a like', function() {
+      expect(determinePostTypes(entry))
+        .to.not.include('like');
+    });
+
+  }); // and entry with empty like-of array
+
 }); // @rcarls/indieutil.determinePostTypes
